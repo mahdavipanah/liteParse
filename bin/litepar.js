@@ -8,8 +8,8 @@ program.version('1.0.0')
        .option('-s, --show','Show the parsed string')
        .option('-e, --encoding <value>','File reading and writing encoding') 
        .option('-t, --tofile <value>','Save the parsed file to another file')
-       .option('-l, --leftdelim <value>','Set the left delimeter')
-       .option('-r, --rightdelim <value>','Set the right delimeter')
+       .option('-l, --leftdelim <value>','Determine the left delimeter')
+       .option('-r, --rightdelim <value>','Determine the right delimeter')
 ;
 
 program.command('parse <file> datafile <datafile>')
