@@ -6,7 +6,7 @@ require('colors');
 program.version('1.0.0')
        .usage('parse <file> <data file> [options]')
        .option('-s, --show','Show the parsed string')
-       .option('-e, --encoding <value>','File parsing encoding') 
+       .option('-e, --encoding <value>','File reading and writing encoding') 
        .option('-t, --tofile <value>','Save the parsed file to another file')
        .option('-l, --leftdelim <value>','Set the left delimeter')
        .option('-r, --rightdelim <value>','Set the right delimeter')
