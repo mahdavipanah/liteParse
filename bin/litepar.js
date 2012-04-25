@@ -3,7 +3,7 @@
 var program = require('commander'),
     lp = require('../index.js');
 require('colors');
-program.version('1.1.0')
+program.version('1.1.1')
        .usage('parse <file> <data file> [options]')
        .option('-s, --show','Show the parsed string')
        .option('-e, --encoding <value>','File reading and writing encoding') 

@@ -38,8 +38,12 @@ exports.fileParsing = function(options){
     }
     if(options.encoding === null || options.encoding === undefined || !options.encoding)
         options.encoding = 'utf8';
-    if(options.return === null || options.return === undefined)
-    	options.return = true;
+    if(options.return === null || options.return === undefined){
+    	if(options.toFile !== undefined && options.toFile!==false){
+    	    options.return = false;    		
+    	} else 
+    	    options.return = true;    	
+    }   
     else
     	options.return = eval(options.return);
     if(!options.data)
