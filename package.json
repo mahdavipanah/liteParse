@@ -1,0 +1,37 @@
+{
+    "name" : "liteParse",
+    "version" : "1.0.0" , 
+    "description" :  "Fast and easy template parser for javascript" , 
+    "keywords" : [
+    	"template" , 
+    	"parser",
+    	"template parser",
+    	"fast template enginee"
+    ],
+    "author" : {
+    	"name" : "Hamidreza Mahdavipanah" ,
+    	"email" : "liteparse@gmail.com"
+    },
+    "repository" : {
+    	"type" : "git",
+    	"url" : "git://github.com/ihardware/liteParse.git"
+    },
+    "dependencies" : {
+    	"commander" : ">=0.6.0",
+    	"colors" : ">=0.6.0"
+    },
+    "bin" : {
+    	"litepar" : "./bin/litepar.js"
+    },
+    "engines" : {
+    	"node" : ">= 0.6.14"
+    },
+    "main" : "./index",
+    "_id": "liteParse@1.0.0",
+    "optionalDependencies": {},
+    "_engineSupported": true,
+    "_npmVersion": "1.1.18",
+    "_nodeVersion": "v0.6.15",
+    "_defaultsLoaded": true,
+    "_from": "liteParse"
+}
