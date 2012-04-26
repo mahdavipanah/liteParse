@@ -112,17 +112,17 @@ A good example for understanding everything :
 var lp = require('liteParse');
 
 /**
-*liteParse have 5 functions :
-*/
+ * liteParse have 5 functions :
+ */
 
 // -------------------------------------------------------------------------------------------
 
 /**
-*  1- liteParse.parse
-*
-*  @param template <string>  the template to parse
-*  @param data <object> data s for parsing the template
-*/
+ * 1- liteParse.parse
+ * @param {string}  the template to parse
+ * @param {object} data s for parsing the template
+ * @return {string} Parsed string
+ */
 
 var parsedTemplate1 = lp.parse('my name is {myname} and your name is {yourname}' , 
     {
@@ -136,11 +136,10 @@ var parsedTemplate1 = lp.parse('my name is {myname} and your name is {yourname}'
 // -------------------------------------------------------------------------------------------
 
 /**
-*  2- liteParse.setDelimeters
-*  
-*  @param left <string> Left delimeter
-*  @param right <string> Right delimeter
-*/
+ * 2- liteParse.setDelimeters
+ * @param {string} Left delimeter
+ * @param {string} Right delimeter
+ */
 
 lp.setDelimeters('{{' , '}}');
 
@@ -152,10 +151,9 @@ var parsedTemplate2 = lp.parse('my name is {{name}}' , {name : 'Ryan'});
 
 
 /**
-*  3- leftDelim  4- rightDelim
-*
-*  Return the current left and right delimeters
-*/ 
+ * 3- leftDelim  4- rightDelim
+ * @return {string} the current left and right delimeters
+ */ 
 
 var nowLeftDelim  = lp.leftDelim();
 // nowLeftDelim = '{{'
@@ -169,10 +167,12 @@ var nowRightDelim = lp.rightDelim();
 
 
 /**
-* 5- fileParsing
-*
-* @param options <object> options for templating a file
-*/
+ * 5- fileParsing
+ *
+ * @param {object} options for templating a file
+ * @return {bollean|string} Parsed string if 'return' set to true, Else returns true if there is no problem
+ *     and false if there is a problem
+ */
 
 var parsedTemplate = lp.fileParsing({
 

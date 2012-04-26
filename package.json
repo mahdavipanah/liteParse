@@ -1,6 +1,6 @@
 {
     "name" : "liteParse",
-    "version" : "1.1.1" , 
+    "version" : "1.1.2" , 
     "description" :  "Fast and easy template parser for javascript" , 
     "keywords" : [
     	"template" , 
@@ -27,7 +27,7 @@
     	"node" : ">= 0.6.14"
     },
     "main" : "./index",
-    "_id": "liteParse@1.1.1",
+    "_id": "liteParse@1.1.2",
     "optionalDependencies": {},
     "_engineSupported": true,
     "_npmVersion": "1.1.18",
