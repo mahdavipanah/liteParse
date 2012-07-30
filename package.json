@@ -28,4 +28,5 @@
     },
     "main" : "./index",
     "_id": "liteParse@2.0.0",
-    "optionalDependencies": {},
+    "optionalDependencies": {}
+}
