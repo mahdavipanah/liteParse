@@ -32,7 +32,7 @@ exports.fileParsing = function(options){
     if(options === null || objLen(options) === 0)
     	return false;   
     options.fileName = path.normalize(options.fileName);
-    if(!path.existsSync(options.fileName)){
+    if(!fs.existsSync(options.fileName)){
     	throw new Error('There is no file with path: '+options.fileName);
         return false;                
     }
@@ -50,7 +50,7 @@ exports.fileParsing = function(options){
     	options.data = {};
     if(options.dataFile !== undefined){
     	options.dataFile = path.normalize(options.dataFile);
-    	if(!path.existsSync(options.dataFile)){
+    	if(!fs.existsSync(options.dataFile)){
     	    throw new Error('There is no file with path: '+options.dataFile);
     	    return false;
     	}
