@@ -1,15 +1,6 @@
 # liteParse
 Fast and easy template parser for javascript 
 
-
-##features
-
-- Simple
-- Easy
-- File parsing
-- Uses JSON for templating data
-- Accessing from command line
-
 ## installation
 
 ### Installing npm (node package manager)
